@@ -82,8 +82,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 "let g:prettier#quickfix_auto_focus = 0
 
 " run prettier on save
-let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+" let g:prettier#autoformat = 0
+" autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
 
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
