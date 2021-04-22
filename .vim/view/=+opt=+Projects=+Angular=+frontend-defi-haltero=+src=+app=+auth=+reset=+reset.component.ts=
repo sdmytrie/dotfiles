@@ -136,12 +136,12 @@ normal! zc
 normal! zc
 47
 normal! zc
-let s:l = 1 - ((0 * winheight(0) + 16) / 32)
+let s:l = 20 - ((19 * winheight(0) + 20) / 40)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+20
+normal! 02|
 let &so = s:so_save | let &siso = s:siso_save
 nohlsearch
 doautoall SessionLoadPost
