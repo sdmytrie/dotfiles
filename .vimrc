@@ -16,6 +16,7 @@ set wildignore+=**/__pycache__/**
 set wildmenu
 set hlsearch
 set incsearch
+set scrolloff=4
 
 "set showbreak=↪\
 "set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨

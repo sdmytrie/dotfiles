@@ -150,10 +150,10 @@ bindsym $mod+agrave workspace number $ws10
 bindsym $mod+mod2+KP_0 workspace number $ws10
 
 
-assign [class="URxvt"] $ws1
-assign [class="Google-chrome"] $ws2
-assign [class="Code"] $ws3
-assign [class="Evolution"] $ws4
+#assign [class="URxvt"] $ws1
+#assign [class="Google-chrome"] $ws2
+#assign [class="Code"] $ws3
+#assign [class="Evolution"] $ws4
 
 # move focused container to workspace
 bindsym $mod+Shift+ampersand move container to workspace number $ws1
@@ -246,9 +246,9 @@ bindsym XF86MonBrightnessDown exec light -U 1
 for_window [class="^.*"] border pixel 2
 
 exec urxvt
-exec urxvt -e ranger
-exec evolution
-exec google-chrome
+#exec urxvt -e ranger
+#exec evolution
+#exec google-chrome
 exec_always feh --bg-scale /home/serge/Images/wallpaper.jpg
 exec_always xrandr --output eDP-1 --primary --mode 1600x900 --pos 0x0 --rotate normal --output HDMI-1 --off
 exec --no-startup-id gnome-settings-daemon
@@ -259,5 +259,5 @@ exec_always --no-startup-id numlockx on
 
 
 smart_gaps on
-gaps inner 8
-gaps outer 3
+gaps inner 4
+gaps outer 1
