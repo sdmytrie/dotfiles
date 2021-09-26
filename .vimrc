@@ -104,3 +104,5 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 command! WipeReg for i in range(34,122) | silent! call setreg(nr2char(i), []) | endfor
+
+set cursorline

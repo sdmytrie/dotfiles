@@ -7,5 +7,11 @@
     git init --bare /opt/Tools/git-bare/dotfiles/  
     alias git-dotfiles='git --git-dir=/opt/Tools/git-bare/dotfiles --work-tree=/home/serge'  
 ```
+
+## Package  
+
+```
+    linux-generic-hwe-18.04
+```
     
     
