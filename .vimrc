@@ -70,11 +70,11 @@ set laststatus=2
 
 set splitbelow splitright
 
-"noremap <silent> <C-left> :vertical resize +5<CR>
-"noremap <silent> <C-right> :vertical resize -5<CR>
-"noremap <silent> <C-up> :vertical resize +5<CR>
-"noremap <silent> <C-down> :vertical resize -5<CR>
-noremap <C-A> :let &winwidth = &columns * 7 / 10<CR>
+"noremap <silent> <M-left> :vertical resize +5<CR>
+"noremap <silent> <M-right> :vertical resize -5<CR>
+"noremap <silent> <M-up> :vertical resize +5<CR>
+"noremap <silent> <M-down> :vertical resize -5<CR>
+noremap <C-A> :let &winwidth = &columns * 8 / 10<CR>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -117,3 +117,8 @@ if has("autocmd")
 au VimLeave * silent execute '!echo -ne "\e[ q"' | redraw!
 endif
 let g:loaded_matchparen=1
+
+if !has('gui_running')
+  set t_Co=256
+endif
+set noshowmode
